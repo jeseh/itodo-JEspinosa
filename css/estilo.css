@@ -1,0 +1,43 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header
+{
+    font-family: Verdana;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    background: #ffaa11;
+}
+#header a
+{
+    background: #ffaa22;
+    border:2px solid white;
+    border-radius: 25px;
+    padding: 0px;
+    margin: 5px;
+}
+
+#introducciontareas #btnAdd
+{
+    width: 30px;
+    background: #ffaa22;
+    border: 1px solid #ffaa22;
+    border-radius: 25px;
+    margin: 5px;
+}
+#info
+{
+    text-align: center;
+}
+#info a
+{
+    margin: 30px 100px;
+}
+.controlgroup-textinput{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

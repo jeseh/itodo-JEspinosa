@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>i-TODO</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="jquery-1.11.0.js"></script>
+    <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="jaydata.min.js"></script>
+    <script src="js/todo.js"></script>
+</head>
+<body>
+    <div data-role="page" id="itodo">
+        <div data-role="panel" id="instrucciones" data-display="overlay">
+            <h1>Lista de tareas</h1>
+            <p>Esto pretende ser un pequeño manual de uso de la aplicación:</p>
+            <p>Para introducir una tarea solo debemos rellenar el campo de texto y hacer click en el boton de añadir.</p>
+            <p>Para eliminar una tarea solo debemos señalar el check que aparecera a la izquierda de cada tarea listada</p>
+            <a href="#itodo" data-rel="close" class="ui-btn">Cerrar</a>
+        </div>
+        <div data-role="header" id="header">
+            <a href="#instrucciones" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon"></a>
+            <h1>
+                iTO-DO
+            </h1>
+            <a href="#paginfo" class="ui-btn ui-icon-info ui-btn-icon-notext ui-nodisc-icon"></a>
+        </div>
+        <div data-role="main" class="ui-content" id="introducciontareas">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width:90%">
+                    <input type="text" id="txtNew">
+                </div>
+                <div class="ui-block-b" style="width:10%">
+                <button class="ui-btn ui-icon-plus ui-btn-icon-notext ui-nodisc-icon" id="btnAdd"></button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div data-role="listado" class="ui-content">
+            <fieldset data-role="controlgroup" id="listatareas">
+            </fieldset>
+        </div>
+    </div>
+    <div data-role="page" id="paginfo">
+        <div data-role="contenido" class="ui-content" id="info">
+            <img src="res/icon/android/icon-72-hdpi.png" />
+            <h1>To-Do V4</h1>
+            <p>The original To-Do</p>
+            <a href="#itodo" data-rel="close" class="ui-btn">Cerrar</a>
+        </div>
+    </div>
+</body>
+</html>        
